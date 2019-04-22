@@ -8,9 +8,11 @@ suite_e: "Crumpet the Elf"
 
 def select_winner(passengers)
   # add the code snippet here!
+  passenger_name = ""
   passengers.each { |suite, name|
     if suite.ends_with?('a') && name.start_with?('A')
-      name
+    passenger_name = name
     end
   }
+  passenger_name
 end
